@@ -1,0 +1,78 @@
+# requirements.txt
+# 핵심 프레임워크
+fastapi
+uvicorn[standard]
+pydantic
+
+# 데이터 처리 및 분석
+pandas
+numpy
+openpyxl
+pyarrow
+ydata-profiling
+
+# 시각화
+matplotlib
+seaborn
+
+# 머신러닝 & 딥러닝
+scikit-learn
+joblib
+torch
+transformers
+sentence-transformers
+faiss-cpu
+
+# LLM (Gemini)
+google-generativeai
+google-ai-generativelanguage
+
+# 데이터베이스
+psycopg2-binary
+sqlalchemy
+
+# 유틸리티
+tqdm
+psutil
+python-multipart
+python-dotenv
+requests
+
+# Jupyter
+jupyter
+ipywidgets
+notebook
+
+
+
+# 기존 requirements.txt에 추가
+# streamlit==1.28.1
+
+# 가상환경 생성 및 활성화
+# python -m venv .venv
+# .venv\Scripts\activate
+
+# 한다음
+# pip install -r fatch.txt 
+
+# 실행
+# cd llm
+# python main.py
+# 실행
+
+
+# ===========================================
+# No module named 'transformers 발생시
+# pip install transformers torch
+
+# 1. 패키지 설치 확인
+# pip list | grep transformers
+# pip list | grep google-generativeai
+# pip list | grep fastapi
+# pip list | grep torch
+# pip list | grep transformers
+# pip list | grep google-generativeai
+
+# 2. 모델 파일 확인
+# ls llm/model.py
+# ls lerning/results/pytorch_model.bin
